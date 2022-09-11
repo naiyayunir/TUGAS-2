@@ -1,0 +1,1 @@
+web: gunicorn tugas-2.wsgi --log-file -
