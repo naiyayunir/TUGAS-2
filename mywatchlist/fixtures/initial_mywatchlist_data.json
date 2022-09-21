@@ -1,0 +1,113 @@
+[
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 1,
+        "fields": {
+            "watched": "watched",
+            "title": "barbie",
+            "rating": 7,
+            "release_date": "1 January 2020",
+            "review": "nice"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 2,
+        "fields": {
+            "watched": "not watched",
+            "title": "ciderella",
+            "rating": 0,
+            "release_date": "1 February 2020",
+            "review": "none"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 3,
+        "fields": {
+            "watched": "watched",
+            "title": "naruto",
+            "rating": 5,
+            "release_date": "1 Maret 2020",
+            "review": "good"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 4,
+        "fields": {
+            "watched": "watched",
+            "title": "doraemon",
+            "rating": 10,
+            "release_date": "1 April 2020",
+            "review": "amazing"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 5,
+        "fields": {
+            "watched": "not watched",
+            "title": "minion",
+            "rating": 0,
+            "release_date": "1 May 2020",
+            "review": "none"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 6,
+        "fields": {
+            "watched": "watched",
+            "title": "upin-ipin",
+            "rating": 8,
+            "release_date": "1 Juny 2020",
+            "review": "fantastic"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 7,
+        "fields": {
+            "watched": "not watched",
+            "title": "shincan",
+            "rating": 0,
+            "release_date": "2 April 2020",
+            "review": "none"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 8,
+        "fields": {
+            "watched": "watched",
+            "title": "dora",
+            "rating": 5,
+            "release_date": "1 November 2020",
+            "review": "hilarious"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 9,
+        "fields": {
+            "watched": "not watched",
+            "title": "spongebob",
+            "rating": 0,
+            "release_date": "11 December 2020",
+            "review": "none"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlist_models",
+        "pk" : 10,
+        "fields": {
+            "watched": "not watched",
+            "title": "tom and jerry",
+            "rating": 10,
+            "release_date": "1 July 2020",
+            "review": "the best"
+        }
+    }
+
+]    
