@@ -4,7 +4,9 @@ https://tugas2naiya.herokuapp.com/mywatchlist/xml/
 https://tugas2naiya.herokuapp.com/mywatchlist/html/
 
 # Screenshoot menggunakan postman
-
+![html_postman](/html_postman.png)
+![xml_postman](/xml_postman.png)
+![json_postman](/json_postman.png)
 
 # Jawaban
 ### 1.
