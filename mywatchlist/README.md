@@ -1,5 +1,5 @@
 # link heroku
-https://tugas2naiya.herokuapp.com/mywatchlist/json/1
+https://tugas2naiya.herokuapp.com/mywatchlist/json/
 https://tugas2naiya.herokuapp.com/mywatchlist/xml/
 https://tugas2naiya.herokuapp.com/mywatchlist/html/
 
