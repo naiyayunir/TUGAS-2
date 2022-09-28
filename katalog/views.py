@@ -8,5 +8,5 @@ def show_catalog(request):
         'list_item' : data_item_catalog,
         'nama' : 'Naiya Dwita Ayunir',
         'npm' : '2106651976'
-    }
+    } 
     return render(request, "katalog.html", context)
