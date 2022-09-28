@@ -8,15 +8,15 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from todolist.models import Task
 
-
+daftar_task = []
 # Create your views here.
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
-    username = request.user
+    user = request.user
     data_todo = Task.objects.filter(user=request.user)
     context = {
         'todolist' : data_todo,
-        'usermame' : username
+        'usermame' : user.username
     }
     return render(request, "todolist.html", context)
 
@@ -55,11 +55,17 @@ def logout_user(request):
 @login_required(login_url='login/')
 def create_task(request):
     if request.method == 'POST':
-        Task().user = request.user
-        Task().date = str(datetime.date.today())
-        Task().title = request.POST.get('title')
-        Task().description = request.POST.get('description')
-        Task().save()
+        user = request.user
+        date = str(datetime.date.today())
+        title = request.POST.get('title')
+        description = request.POST.get('description')
+        if(len(daftar_task)==0):
+            objek = Task(user.id,1,date,title,description)
+        else:
+            objek = Task(user.id,daftar_task[-1].id+1,date,title,description)
+        daftar_task.append(objek)
+        print(user.id)
+        objek.save()
         messages.success(request, 'Task baru kamu udah berhasil ditambah!')
         return redirect('todolist:show_todolist')
     context = {}
