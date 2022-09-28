@@ -1,5 +1,5 @@
 # Aplikasi
-- LINK MENUJU APLIKASI [klik sini](https://tugas2naiya.herokuapp.com/catalog/)
+- [LINK MENUJU APLIKASI](https://tugas2naiya.herokuapp.com/todolist/login/)
 
 # Jawaban
 ### 1.Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
