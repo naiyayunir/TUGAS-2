@@ -5,41 +5,100 @@
 {% endblock meta %}
 
 {% block content %}
-
-<div class = "login"
-
-    <h1>Login</h1>
-
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
-    {% if messages %}
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap demo</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body >
+        <nav class="navbar navbar-light px-4 mb-5" style="background-color: #d8a6cf;">
+            <span class="navbar-text mb-0 h5 font-monospace">Silahkan login</span>
+            <!--img src="logo.png" width="20" height="14" class="d-inline-block align-text-top"-->
+            <span class="navbar-brand mb-0 h1 font-monospace">My Todolist</span>
+            <form action="{% url 'todolist:register' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-success font-monospace">Daftar</button>
+            </form>
+        </nav>
+        <div class = "login container d-flex flex-column justify-content-center align-items-center">
+        <form method="POST" action="">
+            {% csrf_token %}
+            <table class="table-sm">
+                <tr>
+                    <td class="h4 font-monospace" >Username </td>
+                    <td><input type="text" name="username"  placeholder="Username" class="form-control font-monospace"  ></td>
+                </tr>
+                
+                <tr>
+                    <td class="h4 font-monospace">Password </td>
+                    <td><input type="password" name="password" placeholder="Password" class="form-control font-monospace"></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><input class="btn login_btn btn-primary font-monospace" type="submit" value="Login"></td>
+                </tr>
+            </table>
+        </form>
+        
+        {% if messages %}
         <ul>
             {% for message in messages %}
-                <li>{{ message }}</li>
+            <li>{{ message }}</li>
             {% endfor %}
         </ul>
-    {% endif %}     
+        {% endif %}     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <div class="text-center font-monospace" >Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a></div>
+    
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
         
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
-
-</div>
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/c1.jpg" alt="c1" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/c2.jpg" alt="c2" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/c3.jpg" alt="c3" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/c4.jpg" alt="c4" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/c5.jpg" alt="c5" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/c6.jpg" alt="c6" class="d-block" style="width:100%">
+            </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        
+    </div>
+</body>
+</html>
+    
+    
 
 {% endblock content %}
