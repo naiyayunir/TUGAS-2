@@ -48,21 +48,21 @@ kekurangan : apabila koneksi internet lambat, halaman akan berantakan ketika fil
 
 ### 2.Jelaskan tag HTML5 yang kamu ketahui.
 
-*!DOCTYPE      : Tag untuk menentukan tipe dokumen
-*html	      :Tag untuk membuat sebuah dokumen HTML
-*title         :Tag untuk membuat judul dari sebuah halaman
-*body	      :Tag untuk membuat tubuh dari sebuah halaman
-*h1 to h6      :Tag untuk membuat heading
-*form          :Tag untuk membuat sebuah form HTML untuk input pengguna
-*input	      :Tag untuk membuat sebuah kontrol input
-*textarea	  :Tag untuk membuat sebuah kontrol input multibaris (text area)
-*button   	  :Tag untuk membuat sebuah tombol yang dapat diklik
-*img	          :Tag untuk membuat gambar
-*link	      :Tag untuk membuat hubungan antara dokumen dan sumber daya eksternal 
-*table	      :Tag untuk membuat tabel
-*style	      :Tag untuk membuat informasi style untuk dokumen
-*head          :Tag untuk membuat informasi tentang dokumen
-*meta	      :Tag untuk membuat metadata tentang dokumen HTML
+* !DOCTYPE      : Tag untuk menentukan tipe dokumen
+* html	      :Tag untuk membuat sebuah dokumen HTML
+* title         :Tag untuk membuat judul dari sebuah halaman
+* body	      :Tag untuk membuat tubuh dari sebuah halaman
+* h1 to h6      :Tag untuk membuat heading
+* form          :Tag untuk membuat sebuah form HTML untuk input pengguna
+* input	      :Tag untuk membuat sebuah kontrol input
+* textarea	  :Tag untuk membuat sebuah kontrol input multibaris (text area)
+* button   	  :Tag untuk membuat sebuah tombol yang dapat diklik
+* img	          :Tag untuk membuat gambar
+* link	      :Tag untuk membuat hubungan antara dokumen dan sumber daya eksternal 
+* table	      :Tag untuk membuat tabel
+* style	      :Tag untuk membuat informasi style untuk dokumen
+* head          :Tag untuk membuat informasi tentang dokumen
+* meta	      :Tag untuk membuat metadata tentang dokumen HTML
 
 ### 3.Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 
