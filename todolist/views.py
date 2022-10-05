@@ -16,7 +16,7 @@ def show_todolist(request):
     data_todo = Task.objects.filter(user=request.user)
     context = {
         'todolist' : data_todo,
-        'usermame' : user.username
+        'username' : user.username
     }
     return render(request, "todolist.html", context)
 

@@ -1,7 +1,7 @@
 # Aplikasi
 - [LINK MENUJU APLIKASI](https://tugas2naiya.herokuapp.com/todolist/login/)
 
-# Jawaban
+# Jawaban Tugas 4
 ### 1.Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 
 {% csrf_token %} berguna untuk melindungi data pengguna dari serangan. Apabila kita tidak menuliskan potongan kode tersebut pada elemen, maka django tidak akan mengizinkan akses ke route yang menggunakan form, selain itu data kita akan mudah diserang oleh pihak luar.
@@ -31,3 +31,51 @@ Kita bisa-bisa saja membuat elemen <form> secara manual. Caranya adalah dengan m
 8. Tidak lupa saya juga menambahkan path ke urlpatterns project_django pada folder settings.py agar aplikasinya terdaftar.
 9. Lalu saya melakukan add, commit, push dan sudah otomatis ter-deploy.
 10. Pada website yang sudah saya buat, saya membuat dua akan pengguna serta tiga data contoh dengan menggunakan model task.
+
+# Jawaban Tugas 5
+
+### 1.Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
+
+1. Internal, penulisan kode pada inline style terletak pada tag <style>. Penulisan kode dengan internal style hanya dapat dilakukan pada satu halaman website saja, dan tidak dapat digunakan pada halaman lain.
+Kelebihan : tidak perlu mengupload beberapa file, karena css dan html terletak pada file yang sama.
+Kekurangan : css tidak dapat digunakan bersamaan dengan halaman html yang lain. Selain dapat memperlambat performa website.
+2. Inline, penulisan kode yang ditulis langsung pada atribut elemen html. Kode ini ditulis pada setiap kode html yang mempunyai atribut style.
+Kelebihan : sangat membantu apabila kita ingin menguji coba atau sekedar ingin melihat perubahan. Lalu dapat memperbaiki kode dengan cepat, dan juga proses load website akan lebih cepat.
+Kekurangan : Lebih sulit dalam mengatur website karena hanya dapat mengatur satu elemen.
+3. External, penulisan kode yang ditulis pada file eksternal yang terpisah dengan file htmlnya. file CSS ditulis dengan ekstensi .css. 
+kelebihan : struktur file html akan lebih rapi, loading website akan jadi lebih cepat, dapat digunakan di beberapa halaman web sekaligus.
+kekurangan : apabila koneksi internet lambat, halaman akan berantakan ketika file css gagal dipanggil oleh file html.
+
+### 2.Jelaskan tag HTML5 yang kamu ketahui.
+
+<!DOCTYPE>    : Tag untuk menentukan tipe dokumen
+<html>	      :Tag untuk membuat sebuah dokumen HTML
+<title>	      :Tag untuk membuat judul dari sebuah halaman
+<body>	      :Tag untuk membuat tubuh dari sebuah halaman
+<h1> to <h6>  :Tag untuk membuat heading
+<form>        :Tag untuk membuat sebuah form HTML untuk input pengguna
+<input>	      :Tag untuk membuat sebuah kontrol input
+<textarea>	  :Tag untuk membuat sebuah kontrol input multibaris (text area)
+<button>	  :Tag untuk membuat sebuah tombol yang dapat diklik
+<img>	      :Tag untuk membuat gambar
+<link>	      :Tag untuk membuat hubungan antara dokumen dan sumber daya eksternal 
+<table>	      :Tag untuk membuat tabel
+<style>	      :Tag untuk membuat informasi style untuk dokumen
+<head>        :Tag untuk membuat informasi tentang dokumen
+<meta>	      :Tag untuk membuat metadata tentang dokumen HTML
+
+### 3.Jelaskan tipe-tipe CSS selector yang kamu ketahui.
+
+1. Selektor Tag, memilih elemen berdasarkan nama tag.
+2. Selektor Class, selektor yang memilih elemen berdasarkan nama class yang diberikan. Selektor class ditandai dengan tanda titik di depannya.
+3. Selektor ID, hampir sama dengan selector class hanya saja id bersifat unik dan hanya dapat digunakan pada satu elemen saja.
+4. Selektor Atribut, hampir sama dengan selektor tag, hanya saha selektor ini memilih elemen berdasarkan atributnya.
+5. Selektor Universal, selektor yang digunakan untuk menyeleksi semua elemen pada jangkauan (scope) tertentu.
+6. Selektor Pseudo, selektor untuk memilih elemen semu seperti state pada elemen, elemen before dan after, elemen ganjil, dan sebagainya.
+
+### 4.Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Pertama saya menyertakan kode untuk Include Bootstrap’s CSS and JS ke file html yang telah saya buat di tugas sebelumnya.
+2. Selanjutnya saya mulai menghias halaman per halamannnya. Pada tugas ini kebanyakan saya menggunakan inline style. Saya mengubah tulisan menjadi heading, mengganti jenis font, serta menambahkan navigation bar agar halaman websitenya terlihat menarik.
+3. Selanjutnya pada halaman todolist, saya membuat card per tasknya. Kemudian saya menghias dengan memberi warna pada card tersebut. Tidak lupa saya menyesuaikan tata letak dan memberikan keterangan mengenaik card tersebut.
+4. Untuk tombol-tombol yang ada, saya juga menghiasnya menjadi lebih berwarna.
+5. Selanjutnya saya melakukan git add,commit,push seperti biasa.
