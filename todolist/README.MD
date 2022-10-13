@@ -79,3 +79,23 @@ kekurangan : apabila koneksi internet lambat, halaman akan berantakan ketika fil
 3. Selanjutnya pada halaman todolist, saya membuat card per tasknya. Kemudian saya menghias dengan memberi warna pada card tersebut. Tidak lupa saya menyesuaikan tata letak dan memberikan keterangan mengenaik card tersebut.
 4. Untuk tombol-tombol yang ada, saya juga menghiasnya menjadi lebih berwarna.
 5. Selanjutnya saya melakukan git add,commit,push seperti biasa.
+
+# Jawaban Tugas 6
+
+### 1. Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+*Synchronous* programming adalah menjalankan program berdasarkan antrian eksekusi program atau yang biasa disebut dengan sequential. Sehingga apabila suatu program dieksekusi, maka harus menunggu program lain selesai terlebih dahulu. 
+*Asynchronous* programming adalah proses berjalannya suatu program yang dapat dijalankan secara bersamaan tanpa harus menunggu program lain selesai. Sehingga user dapat melakukan interaksi lain dengan website walaupun server sedang mengeksekusi program lain.
+
+### 2. Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma Event-Driven Programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+Event-driven merupakan sebuah paradigma pemrograman yang jalannya program ditentukan oleh tindakan pengguna, tindakan program lainnya,atau keluaran. Pada tugas ini penerapan event-driven programming terletak pada implementasi tombol submit task. Ketika tombol ditekan, maka event akan mentrigger ajax kemudian akan mengirimkan data yang diisikan pada form ke server tanpa menunggu program yang lainnya selesai terlebih dahulu. 
+
+### 3. Jelaskan penerapan asynchronous programming pada AJAX.
+Penerapan asynchronous programming pada AJAX di tugas ini terletak pada fungsi GET yang berfungsi untuk mengambil data dan POST yang berfungsi untuk mengirimkan data ke server dan mengatur tampilan.
+
+### 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+ 1. Pertama saya membuat fungsi baru pada views, yaitu fungsi  yang dapat mengembalikan data dalam bentuk json dan fungsi yang dapat menambahkan todolist.
+ 2. Setelah itu saya menambahkan path nya ke url.py
+ 3. Lalu saya mengimplementasikan ajax di todolist.html.
+ 4. Setelah itu saya membuat modelsnya yang didalamnya juga terdapat form untuk mengisi judul dan deskripsi tugas.
+ 5. Kemudian saya mencoba mencoba menjalanlan serta melakukan debugging.
+ 6. Lalu melakukan git add,commit,push.
